@@ -1,0 +1,17 @@
+{
+  "name": "chipotle_button",
+  "version": "1.0.0",
+  "description": "Order from chipotle using an Amazon Dash Button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KishPatel1996",
+  "license": "ISC",
+  "dependencies": {
+    "chipsandguac": "^1.1.1",
+    "jsonfile": "^2.3.1",
+    "node-dash-button": "^0.5.5",
+    "prompt": "^1.0.0"
+  }
+}
