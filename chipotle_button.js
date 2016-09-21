@@ -11,14 +11,14 @@ if (process.argv.length >= 3 && process.argv[2] == 'real') {
 
 
 var main_func = function(info) {
-	var cag = new chips({
-		email: info['email'], 
-		password: info['pass'],
-		locationId: info['chip_id'],
-		phoneNumber: info['pn']
-	});
 	var dash = dash_button(info['mac'], null, 60000);
 	dash.on("detected", function () {
+		var cag = new chips({
+			email: info['email'], 
+			password: info['pass'],
+			locationId: info['chip_id'],
+			phoneNumber: info['pn']
+		});
 		console.log('button found!');
 		console.log('retrieving most recent orderID');
 		cag.getOrders().then(function(orders) {
